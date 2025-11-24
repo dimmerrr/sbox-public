@@ -41,7 +41,7 @@ CS
     // -------------------------------------------------------------------------------------------------------------------------------------------------------------
     #include "vr_lighting.fxc"
     #include "common/lightbinner.hlsl"
-    #include "tiled_culling.hlsli"
+    #include "tiled_culling.hlsl"
     #include "common/classes/Depth.hlsl"
     #include "common/classes/Decals.hlsl"
 

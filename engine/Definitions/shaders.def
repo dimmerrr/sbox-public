@@ -54,6 +54,7 @@ whitelist "vr_tools_vis.fxc"
 whitelist "vs_decompress.fxc"
 whitelist "sheet_sampling.fxc"
 whitelist "octohedral_encoding.fxc"
+whitelist "ffd.fxc"
 
 whitelist "sbox_pixel.fxc"
 whitelist "sbox_vertex.fxc"

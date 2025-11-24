@@ -256,7 +256,7 @@ internal class SyncPublicRepo( string name ) : Step( name )
 				commit.message += b'\n\n[Source-Commit: ' + commit.original_id + b']\n'
 			""";
 
-		const string filenameCallback = "return filename if (filename is None or (not filename.endswith(b'.pdb') and (b'game/core/shaders/' not in filename or (lambda base: base.startswith(b'vr_') or base.endswith(b'shader_c') or base in {b'common.fxc', b'common_samplers.fxc', b'descriptor_set_support.fxc', b'system.fxc'})(filename.split(b'/')[-1])))) else None";
+		const string filenameCallback = "return filename if (filename is None or (not filename.endswith(b'.pdb') and (b'game/core/shaders/' not in filename or (lambda base: base.startswith(b'vr_') or base.endswith(b'shader_c') or base in {b'common.fxc', b'common_samplers.fxc', b'descriptor_set_support.fxc', b'system.fxc', b'tiled_culling.hlsl'})(filename.split(b'/')[-1])))) else None";
 		filterArgs.Append( $"--filename-callback \"{filenameCallback}\" " );
 		filterArgs.Append( $"--commit-callback \"{commitCallback}\"" );
 
